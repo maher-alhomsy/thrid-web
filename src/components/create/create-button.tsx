@@ -45,6 +45,7 @@ const CreateButton = ({ form }: Props) => {
     mutate(transaction, {
       onSuccess: ({ transactionHash, chain }) => {
         console.log('Success');
+        toast.dismiss();
         toast.success('Transaction confirmed');
 
         console.log(chain.id);

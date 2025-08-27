@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-      <Toaster />
+      <Toaster className="text-white bg-indigo-600 rounded-full text-2xl" />
     </>
   );
 }
