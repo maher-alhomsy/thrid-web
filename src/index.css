@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-screen: var(--screen);
+  --color-primary: oklch(52.537% 0.2429 294.432);
+}
+
+:root {
+  --primary: oklch(0.205 0 0);
+  --screen: oklch(15.326% 0.01492 284.497);
+
+  --foreground: white;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
